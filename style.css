@@ -4,7 +4,12 @@
 }
 html, body {
     height: 100%;
-    background-color: #9198e5;
+    background-color: #7a5277;
+}
+#custom-cards {
+    padding: 8%;
+    background: linear-gradient(#1e062e, #7a5277);
+    height: 100%;
 }
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
