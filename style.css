@@ -1,7 +1,9 @@
 #hero {
     background: linear-gradient(#1e062e, #7a5277);
+    height: 100%;
 }
-body {
+html, body {
+    height: 100%;
     background-color: #9198e5;
 }
 /* The actual timeline (the vertical ruler) */
