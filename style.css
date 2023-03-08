@@ -1,15 +1,14 @@
-#hero {
-    background: linear-gradient(#1e062e, #7a5277);
-    height: 100%;
-}
 html, body {
     height: 100%;
     background-color: #7a5277;
 }
-#custom-cards {
+#hero, #custom-cards, #timeline, #album {
     padding: 8%;
     background: linear-gradient(#1e062e, #7a5277);
     height: 100%;
+}
+#album {
+    height: fit-content;
 }
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
