@@ -12,6 +12,9 @@ function showTimeline() {
 
 function showIndex() {
     window.open("index.html","_self");
+    // setTimeout(() => {
+    //     window.scrollTo(0, document.body.scrollHeight);
+    // }, "1000");
 }
 
 function showAlbum() {

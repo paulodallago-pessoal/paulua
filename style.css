@@ -1,11 +1,13 @@
-body {
+body, html {
+    height: 100%;
+}
+#container {
     background: linear-gradient(#0e0117, #743f70, #210534);
 }
 #c_timeline {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    background: linear-gradient(#0e0117, #743f70, #210534);
 }
 #timeline {
     padding-left: 10%;
@@ -18,23 +20,23 @@ body {
 #index::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
-#albumHtml {
-    background: linear-gradient(#0e0117, #743f70);
-}
 #c_album {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
 }
 #hero {
-    padding: 8%;
+    height: 100%;
 }
-#c_hero {
-    padding-top: 10%;
-    padding-bottom: 10%;
+#c_hero{
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 #c_cards {
-    padding: 8%;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 #album {
     height: fit-content;
