@@ -1,13 +1,14 @@
-body, html {
+body, html, #hero {
     height: 100%;
 }
 #container {
     background: linear-gradient(#0e0117, #743f70, #210534);
 }
-#c_timeline {
+#c_timeline, #c_album {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    height: 100%;
 }
 #timeline {
     padding-left: 10%;
@@ -20,26 +21,10 @@ body, html {
 #index::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
-#c_album {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-#hero {
-    height: 100%;
-}
-#c_hero{
+#c_hero, #c_cards {
     height: 100vh;
     padding-left: 10%;
     padding-right: 10%;
-}
-#c_cards {
-    height: 100vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-#album {
-    height: fit-content;
 }
 #btnPrev:hover {
     text-decoration: none;
@@ -50,9 +35,6 @@ body, html {
     transition: background-color 250ms;
     background-color: #ffeafd;
     cursor: pointer;
-}
-.card {
-    transition: background-color 250ms;    
 }
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
