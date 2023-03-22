@@ -2,7 +2,7 @@ body, html, #hero {
     height: 100%;
 }
 #container {
-    background: linear-gradient(#0e0117, #743f70, #210534);
+    background: linear-gradient(#3564AA, #7A689C, #CA5B6B);
 }
 #c_timeline, #c_album {
     padding-top: 50px;
@@ -26,15 +26,48 @@ body, html, #hero {
     padding-left: 10%;
     padding-right: 10%;
 }
+.card-text{
+    color: black;
+    font-weight:600;
+}
+.card-alb{
+    transition: 100ms ease-in-out;
+}
+.card-alb:hover{
+    transform: scale(2);
+    z-index: 1;
+}
 #btnPrev:hover {
     text-decoration: none;
     outline: 0;
     opacity: .5;
 }
+.card{
+    transition: 100ms ease-in-out;
+
+}
 .card:hover {
-    transition: background-color 250ms;
     background-color: #ffeafd;
     cursor: pointer;
+}
+.cardtl{
+    width: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.cardtl-left{
+    margin-left: 25%;
+}
+footer{
+    text-align: center;
+    color: white;
 }
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
@@ -76,7 +109,6 @@ z-index: 1;
 /* Place the container to the left */
 .left-2 {
 padding: 0px 40px 20px 0px;
-left: 0;
 }
 
 /* Place the container to the right */
