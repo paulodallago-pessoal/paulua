@@ -1,12 +1,1 @@
-background: linear-gradient(#3564AA, #7A689C, #CA5B6B);
-
-                        <!-- timeline right  -->
-                        <div class="timeline-2 right-2">
-                            <div class="card">
-                                <img src="images/.jpg" class="card-img-top" alt="Responsive image">
-                                <div class="card-body p-4">
-                                    <h4 class="fw-bold mb-4">/</h4>
-                                    <p class="mb-0">Evento </p>
-                                </div>
-                            </div>
-                        </div>
+cores: background: linear-gradient(#3564AA, #7A689C, #CA5B6B);
