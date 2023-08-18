@@ -16,6 +16,9 @@ function showAlbum() {
 function showPlaylist(){
     window.open("https://deezer.page.link/akTDYhA5J1qnCUb78");
 }
+function showArquivo(){
+    window.open("html/arquivo.html", "_self");
+}
 function objFoto(label, url){
     fotos.push({
         label: label,
@@ -56,5 +59,26 @@ objFoto("09/01 - Sua casa", "../images/31.jfif");
 objFoto("20/01 - Praia", "../images/32.jfif");
 objFoto("20/02 - Praia", "../images/33.jfif");
 objFoto("10/03 - Não-me-toque", "../images/34.jfif");
+objFoto("10/03 - Não-me-toque", "../images/10.3.jpg");
 objFoto("17/03 - Sua casa", "../images/35.jfif");
 objFoto("18/03 - Batatas", "../images/36.jfif");
+objFoto("17/04 - ", "../images/17.4.jpg");
+objFoto("19/04 - ", "../images/19.4.jpg");
+objFoto("30/04 - ", "../images/30.4.jpg");
+objFoto("05/05 - ", "../images/5.5.jpg");
+objFoto("13/05 - ", "../images/13.5.jpg");
+objFoto("20/05 - ", "../images/20.5.jpg");
+objFoto("02/06 - ", "../images/2.6.jpg");
+objFoto("03/06 - ", "../images/3.6.jpg");
+objFoto("07/06 - ", "../images/7.6.jpg");
+objFoto("09/06 - ", "../images/9.6.jpg");
+objFoto("11/06 - ", "../images/11.6.jpg");
+objFoto("11/06 - ", "../images/11.6-2.jpg");
+objFoto("11/06 - ", "../images/11.6-3.jpg");
+objFoto("25/06 - ", "../images/25.6.jpg");
+objFoto("04/07 - ", "../images/4.7.jpg");
+objFoto("08/07 - ", "../images/8.7.jpg");
+objFoto("06/08 - ", "../images/6.8.jpg");
+
+
+
