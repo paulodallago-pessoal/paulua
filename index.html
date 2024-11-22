@@ -1,88 +1,120 @@
 <!DOCTYPE html>
 <html id="index">
-    <head>
-      <meta charset="UTF-8">
-      <title>Paulua</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <link href="css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-      <!-- hero -->
-      <div id="container">
-        <div id="c_hero">
-          <div class="text-secondary px-auto text-center d-flex align-items-center text-white" id="hero">
-              <div>
-                <h1 class="display-5 fw-bold">♡ Feliz mesversário ♡</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="fs-5 mb-1">Parabéns pra nós por esse ano incrível ♡</p>
-                  <p class="fs-5 mb-4">
-                    Enfim completamos um ano de namoro. Escrever um texto completamente diferente aqui seria demais da parte não-artística do casal, mas não posso deixar de te dizer por aqui também
-o quanto eu te amo. O quanto eu admiro você, o jeito que você me faz sentir, como você me acompanha em tudo, e como sua companhia faz tudo incrível. Esse site serviu pra registrar nossos momentos mais marcantes,
-mas a verdade é que do teu lado todo dia é maravilhoso. Todo café da tarde com panqueca, toda janta assistindo masterchef, todo pôr do sol, toda noite dormindo cedo por causa da aula, você faz todos esses momentos valiosissímos. 
-Eu nem tenho como agradecer, mas quero fazer você feliz pra sempre. 
-                  </p>
-                  <p class="fs-5 mb-5">Te amo lu ♡.</p>
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="showCards()">Ver mais</button>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <!-- cards -->
-        <div class="py-5" id="c_cards">
-          <h2 class="pb-2 border-bottom text-white"> <button class="carousel-control-prev-icon bg-transparent border-0" aria-hidden="true" id="btnPrev" onclick="showHero()"></button>Páginas</h2>
-          <!-- obj 1 -->
-          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            <div class="col" onclick="showTimeline()">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Linha do tempo</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <small>Alguns dos nossos melhores momentos</small>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- obj 2 -->
-            <div class="col" onclick="showAlbum()">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Fotos</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <small>Nossas fotos boas</small>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- obj 3 -->
-            <div class="col" onclick="showPlaylist()">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Nossa playlist</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <small>Nossas musiquinhas</small>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col" onclick="showArquivo()">
-              <div class="card card-cover h-70 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                <div class="d-flex flex-column h-100 p-5 pb-1  text-shadow-1">
-                  <h3 class="pt-1 mt-5 mb-4 display-6 lh-1 fw-bold">Arquivo</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <small>Conteúdos antigos</small>
-                  </ul>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Paulua</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- hero -->
+    <div id="container">
+      <div id="c_hero">
+        <div
+          class="text-secondary px-auto text-center d-flex align-items-center text-white"
+          id="hero"
+        >
+          <div>
+            <h1 class="display-5 fw-bold">♡ Feliz aniversário ♡</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-1">Sobrevivemos esse ano!</p>
+              <p class="fs-5 mb-4">
+                Enfim completamos dois anos juntos, e acho que nunca foi tão
+                difícil escrever uma atualização pra esse site. Muita coisa
+                mudou desde o ano passado, e parece que nada relevante
+                aconteceu. Foi um ano terrível, mas tá acabando, e nós
+                continuamos juntos. Você não desistiu de mim, e continuou
+                estando ao meu lado (a distância) mesmo comigo beirando a
+                loucura, o que tem sido bem frequente. 
+              </br> Muito obrigado por ter acreditado em mim quando eu precisei.
+              </p>
+              <p class="fs-5 mb-5">Te amo lu ♡.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-light btn-lg px-4"
+                  onclick="showCards()"
+                >
+                  Ver mais
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <footer>
-          ☾✹
-        </footer>
       </div>
-    </body>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <!-- cards -->
+      <div class="py-5" id="c_cards">
+        <h2 class="pb-2 border-bottom text-white">
+          <button
+            class="carousel-control-prev-icon bg-transparent border-0"
+            aria-hidden="true"
+            id="btnPrev"
+            onclick="showHero()"
+          ></button
+          >Páginas
+        </h2>
+        <!-- obj 1 -->
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col" onclick="showTimeline()">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Linha do tempo
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <small>Alguns dos nossos melhores momentos</small>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- obj 2 -->
+          <div class="col" onclick="showAlbum()">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Fotos</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <small>Nossas fotos boas</small>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- obj 3 -->
+          <div class="col" onclick="showArquivo()">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Arquivo</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <small>Conteúdos antigos</small>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          </div>
+          <!-- obj 4 -->
+          <div class="col">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5IxSg6aZlkb0SAIStCszoc?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <footer>☾✹</footer>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>

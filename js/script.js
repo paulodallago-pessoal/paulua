@@ -1,38 +1,40 @@
 function showCards() {
-    window.scrollTo(0, document.body.scrollHeight);
+  window.scrollTo(0, document.body.scrollHeight);
 }
 function showHero() {
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 }
 function showTimeline() {
-    window.open("html/timeline.html","_self");
+  window.open("html/timeline.html", "_self");
 }
 function showIndex() {
-    window.open("../index.html","_self");
+  window.open("../index.html", "_self");
 }
 function showAlbum() {
-    window.open("html/album.html","_self");
+  window.open("html/album.html", "_self");
 }
-function showPlaylist(){
-    window.open("https://deezer.page.link/akTDYhA5J1qnCUb78");
+function showPlaylist() {
+  window.open(
+    "https://open.spotify.com/playlist/5IxSg6aZlkb0SAIStCszoc?si=c95a12c8f9bf48b1"
+  );
 }
-function showArquivo(){
-    window.open("html/arquivo.html", "_self");
+function showArquivo() {
+  window.open("html/arquivo.html", "_self");
 }
-function objFoto(label, url){
-    fotos.push({
-        label: label,
-        url: url
-    });
+function objFoto(label, url) {
+  fotos.push({
+    label: label,
+    url: url,
+  });
 }
 //vue
-fotos=[];
+fotos = [];
 var dados = {
-    "fotos": fotos
-}
+  fotos: fotos,
+};
 new Vue({
-    el: "#vueAlbum",
-    data: dados
+  el: "#vueAlbum",
+  data: dados,
 });
 //objects
 objFoto("10/09 - Gare", "../images/01.jpg");
@@ -91,3 +93,22 @@ objFoto("05/11 - Toca do ratão", "../images/5.11.jpg");
 objFoto("09/11", "../images/9.11.jpg");
 objFoto("11/11 - Roda gigante", "../images/11.11.jpg");
 objFoto("18/11 - Beldinhos no quiero café", "../images/18.11.jpg");
+objFoto("22/11/23", "../images/22.11.23.jpg");
+objFoto("25/11/23 - Maroca", "../images/25.11.23.jpg");
+objFoto("26/11/23 - Toca do ratão", "../images/26.11.23.jpg");
+objFoto("08/12/23 - PF Shopping", "../images/8.12.23.jpg");
+objFoto("09/12/23 - Festa da alfasig", "../images/9.12.23.jpg");
+objFoto("16/12/23 - Bibi", "../images/16.12.23.jpg");
+objFoto("17/12/23 - Maroca", "../images/17.12.23.jpg");
+objFoto("21/12/23", "../images/21.12.23.jpg");
+objFoto("25/12/23", "../images/25.12.23.jpg");
+objFoto("31/12/23", "../images/31.12.23.jpg");
+objFoto("20/01/24 - Osaka", "../images/20.01.24.jpg");
+objFoto("20/01/24", "../images/20.01.24-2.jpg");
+objFoto("27/01/24 - Formatura da Iara", "../images/27.01.24.jpg");
+objFoto("10/02/24", "../images/10.02.24.jpg");
+objFoto("12/02/24", "../images/12.02.24.jpg");
+objFoto("17/02/24 - PF Shopping", "../images/17.02.24.jpg");
+objFoto("17/02/24 - PF Shopping", "../images/17.02.24-2.jpg");
+objFoto("22/02/24 - Batatas", "../images/22.02.24.jpg");
+objFoto("24/02/24 - :(", "../images/24.02.24.jpg");

@@ -1,79 +1,269 @@
-body, html, #hero {
-    height: 100%;
+body,
+html,
+#hero {
+  height: 100%;
 }
 #container {
-    background: linear-gradient(#3564AA, #7A689C, #CA5B6B);
+  background: linear-gradient(#3564aa, #7a689c, #ca5b6b);
 }
-#c_timeline, #c_album {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 100%;
+#c_timeline,
+#c_album {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100%;
 }
 #timeline {
-    padding-left: 10%;
-    padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #index {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 #index::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
-#c_hero, #c_cards, #c_arquivo {
-    height: 100vh;
-    padding-left: 10%;
-    padding-right: 10%;
+#c_hero {
+  height: 100vh;
 }
-.py-10{
-    padding-top: 130vh;
+#c_hero,
+#c_cards,
+#c_arquivo {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.py-10 {
+  padding-top: 130vh;
 }
 #bottom {
-    height: 300vh;
-    background: linear-gradient(#CA5B6B, #3564AA, #183e77, #092248, #02122b);
-    position: relative; /* Add this to establish a positioning context */
+  height: 300vh;
+  background: linear-gradient(#ca5b6b, #3564aa, #183e77, #092248, #02122b);
+  position: relative; /* Add this to establish a positioning context */
 }
-  
+
 #stars {
+  position: absolute; /* Position the stars container */
+  bottom: 0; /* Position at the bottom of the parent container */
+  left: 0;
+  width: 100%;
+  height: 150vh;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 1))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto; /* Adjust the background size as needed */
+}
+.card-text {
+  color: black;
+  font-weight: 600;
+}
+.card-alb {
+  transition: 100ms ease-in-out;
+}
+.card-alb:hover {
+  transform: scale(2);
+  z-index: 1;
+}
+#btnPrev:hover {
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.5;
+}
+.scrollBtn {
+  position: fixed;
+  width: 4vw;
+  height: 4vw;
+  font-size: large;
+  border-radius: 50%;
+  right: 1vw;
+  bottom: 1vw;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.scrollBtn > a {
+  text-decoration: none;
+  color: white;
+}
+.card {
+  transition: 100ms ease-in-out;
+}
+.card:hover {
+  background-color: #ffeafd;
+  cursor: pointer;
+}
+.cardtl {
+  width: 75%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.cardtl-left {
+  margin-left: 25%;
+}
+footer {
+  text-align: center;
+  color: white;
+}
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #26c6da;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #26c6da;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+}
+
+/* Place the container to the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+}
+@media (max-width: 1000px) {
+  #bottom {
+    height: 100vh;
+    background: linear-gradient(#ca5b6b, #3564aa, #183e77, #092248, #02122b);
+    /* position: relative; Add this to establish a positioning context */
+  }
+
+  .py-10 {
+    padding-top: 50vh;
+  }
+
+  #stars {
     position: absolute; /* Position the stars container */
     bottom: 0; /* Position at the bottom of the parent container */
     left: 0;
     width: 100%;
-    height: 150vh;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
-    background-image: url('../images/bg.png');
-    background-repeat: no-repeat;
+    height: 70%;
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 1))
+    );
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background-image: url("../images/bg.png");
+    background-repeat: repeat-y;
     background-position: bottom;
     background-size: 100% auto; /* Adjust the background size as needed */
-}
-.card-text{
-    color: black;
-    font-weight:600;
-}
-.card-alb{
-    transition: 100ms ease-in-out;
-}
-.card-alb:hover{
-    transform: scale(2);
-    z-index: 1;
-}
-#btnPrev:hover {
-    text-decoration: none;
-    outline: 0;
-    opacity: .5;
-}
-.card{
-    transition: 100ms ease-in-out;
-
-}
-.card:hover {
-    background-color: #ffeafd;
-    cursor: pointer;
-}
-.cardtl{
-    width: 75%;
+  }
+  .cardtl {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -81,244 +271,87 @@ body, html, #hero {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
-}
-.cardtl-left{
-    margin-left: 25%;
-}
-footer{
-    text-align: center;
-    color: white;
-}
-/* The actual timeline (the vertical ruler) */
-.main-timeline-2 {
-position: relative;
-}
+  }
+  .cardtl-left {
+    margin-left: 0;
+  }
+  /* Place the container to the left */
+  .left-2 {
+    padding: 0px 40px 20px 0px;
+  }
 
-/* The actual timeline (the vertical ruler) */
-.main-timeline-2::after {
-content: "";
-position: absolute;
-width: 3px;
-background-color: #26c6da;
-top: 0;
-bottom: 0;
-left: 50%;
-margin-left: -3px;
-}
+  /* Place the container to the right */
+  .right-2 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
 
-/* Container around content */
-.timeline-2 {
-position: relative;
-background-color: inherit;
-width: 50%;
-}
+  /* Add arrows to the left container (pointing right) */
+  .left-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
 
-/* The circles on the timeline */
-.timeline-2::after {
-content: "";
-position: absolute;
-width: 25px;
-height: 25px;
-right: -11px;
-background-color: #26c6da;
-top: 15px;
-border-radius: 50%;
-z-index: 1;
-}
+  /* Add arrows to the right container (pointing left) */
+  .right-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
-/* Place the container to the left */
-.left-2 {
-padding: 0px 40px 20px 0px;
-}
+  /* Fix the circle for containers on the right side */
+  .right-2::after {
+    left: -14px;
+  }
 
-/* Place the container to the right */
-.right-2 {
-padding: 0px 0px 20px 40px;
-left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left-2::before {
-content: " ";
-position: absolute;
-top: 18px;
-z-index: 1;
-right: 30px;
-border: medium solid white;
-border-width: 10px 0 10px 10px;
-border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right-2::before {
-content: " ";
-position: absolute;
-top: 18px;
-z-index: 1;
-left: 30px;
-border: medium solid white;
-border-width: 10px 10px 10px 0;
-border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right-2::after {
-left: -14px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-.main-timeline-2::after {
-left: 31px;
-}
-
-/* Full-width containers */
-.timeline-2 {
-width: 100%;
-padding-left: 70px;
-padding-right: 25px;
-}
-
-/* Make sure that all arrows are pointing leftwards */
-.timeline-2::before {
-left: 60px;
-border: medium solid white;
-border-width: 10px 10px 10px 0;
-border-color: transparent white transparent transparent;
-}
-
-/* Make sure all circles are at the same spot */
-.left-2::after,
-.right-2::after {
-left: 18px;
-}
-
-.left-2::before {
-right: auto;
-}
-
-/* Make all right containers behave like the left ones */
-.right-2 {
-left: 0%;
-}
-}
-@media (max-width: 1000px) {
-    #bottom {
-        height: 100vh;
-        background: linear-gradient(#CA5B6B, #3564AA, #183e77, #092248, #02122b);
-        /* position: relative; Add this to establish a positioning context */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .main-timeline-2::after {
+      left: 31px;
     }
 
-    .py-10{
-        padding-top: 50vh;
+    /* Full-width containers */
+    .timeline-2 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
     }
-      
-    #stars {
-        position: absolute; /* Position the stars container */
-        bottom: 0; /* Position at the bottom of the parent container */
-        left: 0;
-        width: 100%;
-        height: 70%;
-        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-        mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
-        background-image: url('../images/bg.png');
-        background-repeat: repeat-y;
-        background-position: bottom;
-        background-size: 100% auto; /* Adjust the background size as needed */
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-2::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
     }
-    .cardtl{
-        width: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0,0,0,.125);
-        border-radius: 0.25rem;
+
+    /* Make sure all circles are at the same spot */
+    .left-2::after,
+    .right-2::after {
+      left: 18px;
     }
-    .cardtl-left{
-        margin-left: 0;
+
+    .left-2::before {
+      right: auto;
     }
-    /* Place the container to the left */
-    .left-2 {
-        padding: 0px 40px 20px 0px;
-        }
-        
-        /* Place the container to the right */
-        .right-2 {
-        padding: 0px 0px 20px 40px;
-        left: 50%;
-        }
-        
-        /* Add arrows to the left container (pointing right) */
-        .left-2::before {
-        content: " ";
-        position: absolute;
-        top: 18px;
-        z-index: 1;
-        right: 30px;
-        border: medium solid white;
-        border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent white;
-        }
-        
-        /* Add arrows to the right container (pointing left) */
-        .right-2::before {
-        content: " ";
-        position: absolute;
-        top: 18px;
-        z-index: 1;
-        left: 30px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-        }
-        
-        /* Fix the circle for containers on the right side */
-        .right-2::after {
-        left: -14px;
-        }
-        
-        /* Media queries - Responsive timeline on screens less than 600px wide */
-        @media screen and (max-width: 600px) {
-        /* Place the timelime to the left */
-        .main-timeline-2::after {
-        left: 31px;
-        }
-        
-        /* Full-width containers */
-        .timeline-2 {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-        }
-        
-        /* Make sure that all arrows are pointing leftwards */
-        .timeline-2::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-        }
-        
-        /* Make sure all circles are at the same spot */
-        .left-2::after,
-        .right-2::after {
-        left: 18px;
-        }
-        
-        .left-2::before {
-        right: auto;
-        }
-        
-        /* Make all right containers behave like the left ones */
-        .right-2 {
-        left: 0%;
-        }
+
+    /* Make all right containers behave like the left ones */
+    .right-2 {
+      left: 0%;
     }
+  }
 }
