@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/paulua/static/css/main.34a1d8c4.css",
-    "main.js": "/paulua/static/js/main.79a4ae49.js",
+    "main.css": "/paulua/static/css/main.40f89635.css",
+    "main.js": "/paulua/static/js/main.2eae7165.js",
     "static/media/17.09.23.jpg": "/paulua/static/media/17.09.23.68d2e3bf8391f548dd8a.jpg",
     "static/media/25.12.23.jpg": "/paulua/static/media/25.12.23.5645d5a0b3eceb9ca83e.jpg",
     "static/media/10.03.23-1.jpg": "/paulua/static/media/10.03.23-1.ca2890514699c7cb96a8.jpg",
@@ -87,14 +87,14 @@
     "static/media/11.12.22-1.jfif": "/paulua/static/media/11.12.22-1.6549a4fba95eea249a44.jfif",
     "static/media/20.01.23.jfif": "/paulua/static/media/20.01.23.8fca894c815a9a117acb.jfif",
     "static/media/03.12.22.jfif": "/paulua/static/media/03.12.22.7009418e75f1feeca607.jfif",
-    "static/media/bg.png": "/paulua/static/media/bg.f46d2cee6c7c0e9242da.png",
+    "static/media/stars.png": "/paulua/static/media/stars.f46d2cee6c7c0e9242da.png",
     "static/media/22.10.22.jfif": "/paulua/static/media/22.10.22.c088cb15a393be6024e6.jfif",
     "index.html": "/paulua/index.html",
-    "main.34a1d8c4.css.map": "/paulua/static/css/main.34a1d8c4.css.map",
-    "main.79a4ae49.js.map": "/paulua/static/js/main.79a4ae49.js.map"
+    "main.40f89635.css.map": "/paulua/static/css/main.40f89635.css.map",
+    "main.2eae7165.js.map": "/paulua/static/js/main.2eae7165.js.map"
   },
   "entrypoints": [
-    "static/css/main.34a1d8c4.css",
-    "static/js/main.79a4ae49.js"
+    "static/css/main.40f89635.css",
+    "static/js/main.2eae7165.js"
   ]
 }
