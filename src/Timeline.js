@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
-import { events } from "./resources/images/images";
+import { events } from "./images";
 
 const Timeline = () => {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const Timeline = () => {
             {events.map((event, index) => (
               <div
                 key={index}
-                id={`${event.date == "22/11/23" ? "scrollTarget" : ""}`} //última atualização
+                id={`${event.date === "22/11/23" ? "scrollTarget" : ""}`} //última atualização
                 className={`timeline-2 ${
                   index % 2 === 0 ? "right-2" : "left-2"
                 }`}
@@ -31,7 +31,7 @@ const Timeline = () => {
                 <div
                   className={`cardtl ${index % 2 !== 0 ? "cardtl-left" : ""}`}
                 >
-                  {event.url != undefined && (
+                  {event.url !== undefined && (
                     <img
                       src={event.url}
                       className="card-img-top"

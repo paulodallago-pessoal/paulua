@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
-import { images } from "./resources/images/images";
+import { images } from "./images";
 
 const Album = () => {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Album = () => {
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {images.map((image, index) => {
-                if (image.label != undefined) {
+                if (image.label !== undefined) {
                   return (
                     <div key={index} className="col card-alb">
                       <div className="card shadow-sm">
