@@ -1,7 +1,7 @@
 import React from "react";
-import "./index.css";
+import "../assets/style/index.css";
 import { useNavigate } from "react-router-dom";
-import { images } from "./images";
+import { images } from "../utils/images";
 
 const Album = () => {
   const navigate = useNavigate();

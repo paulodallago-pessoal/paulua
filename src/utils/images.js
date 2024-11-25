@@ -1,7 +1,7 @@
 //o q tem label aparece no album, oq tem description aparece na timeline
-import images22 from "./resources/images/images22";
-import images23 from "./resources/images/images23";
-import images24 from "./resources/images/images24";
+import images22 from "../assets/images/images22";
+import images23 from "../assets/images/images23";
+import images24 from "../assets/images/images24";
 
 const images = [...images22, ...images23, ...images24];
 

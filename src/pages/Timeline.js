@@ -1,7 +1,7 @@
 import React from "react";
-import "./index.css";
+import "../assets/style/index.css";
 import { useNavigate } from "react-router-dom";
-import { events } from "./images";
+import { events } from "../utils/images";
 
 const Timeline = () => {
   const navigate = useNavigate();

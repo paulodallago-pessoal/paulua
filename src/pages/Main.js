@@ -1,5 +1,5 @@
-import Card from "./Card";
-import SpotifyEmbbed from "./SpotifyEmbbed";
+import Card from "../components/Card";
+import SpotifyEmbbed from "../components/SpotifyEmbbed";
 
 const Main = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
-import Arquivo from "./Arquivo";
-import Timeline from "./Timeline";
-import Album from "./Album";
-import Main from "./Main";
+import "./assets/style/index.css";
+import Arquivo from "./pages/Arquivo";
+import Timeline from "./pages/Timeline";
+import Album from "./pages/Album";
+import Main from "./pages/Main";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
