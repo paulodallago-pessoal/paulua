@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/paulua">
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/timeline" element={<Timeline />} />
